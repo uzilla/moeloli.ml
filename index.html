@@ -17,7 +17,11 @@
 	You may get a copy of the GNU Lesser General Public License
 	from http://www.gnu.org/licenses/lgpl.txt
 -->
-<html lang="zh-Hans" manifest="offline.appcache">
+
+<!--
+	Copyright (C) 2018 MoeLoli.ML <urain39@qq.com>
+-->
+<html lang="zh-Hans">
 	<head>
 		<meta charset="utf-8" />
 		<title>Aria2 Web 控制台</title>
@@ -32,21 +36,21 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
 		<link href="css/main.css" rel="stylesheet" />
+		<link href="css/main-moeloli.ml.css" rel="stylesheet" />
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container">
+		<div class="container" id="head-container">
 			<header class="main-head page-header">
 				<h1>Aria2 Web 控制台</h1>
-				<span id="offline-cached"></span>
+				<!--<span id="offline-cached"></span>-->
 				<div id="global-info" class="pull-right">
 					<div id="global-version"></div>
 					<div id="global-speed"></div>
 				</div>
 			</header>
-
 			<div class="clearfix hide" id="main-control">
 				<div id="main-alert" class="hide">
 					<div id="main-alert-inline" class="alert">
@@ -119,6 +123,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="container" id="main-container">
 
 			<section id="active-tasks">
 			<div class="section-header">
@@ -135,12 +142,12 @@
 
 			<section id="other-tasks">
 			<div class="section-header">
-				<i class="icon-chevron-down"></i><b>其他任务</b>
+				<i class="icon-chevron-down"></i><b>待确认的任务</b>
 			</div>
 			<ul id="waiting-tasks-table" class="tasks-table">
 				<li>
 					<div class="empty-tasks">
-						<strong>没有任务</strong>
+						<strong>没有需要确认的任务</strong>
 					</div>
 				</li>
 			</ul>
@@ -242,12 +249,18 @@
 			<div id="copyright">
 				作者 <a href="https://github.com/binux/yaaw" target="_blank">Binux</a>
 				&nbsp;/&nbsp; 汉化 <a href="https://github.com/aa65535/yaaw-zh-hans" target="_blank">aa65535</a>
-				&nbsp;/&nbsp; <a href="usage.html" target="_blank">使用说明</a>
+				&nbsp;/&nbsp; 修改 <a href="https://github.com/urain39/yaaw-zh-hans" target="_blank">urain39</a>
 			</div>
 			<a href="javascript:;" id="saveSettings" class="btn btn-success">保存</a>
 			<a href="javascript:;" class="btn" data-dismiss="modal">取消</a>
 		</div>
 		</section>
+
+		<footer id="main-footer">
+			<section>
+				&copy; 2018 MoeLoli.ML &amp; YAAW Authors | Hosted on Coding.Net
+			</section>
+		</footer>
 
 		<script id="global-speed-tpl" type="text/mustache-template">
 			<i class="icon-download"></i> <span>{{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}</span>/s
@@ -396,7 +409,7 @@
 		<script id="other-task-empty" type="text/mustache-template">
 			<li>
 				<div class="empty-tasks">
-					<strong>没有任务</strong>
+					<strong>没有需要确认的任务</strong>
 				</div>
 			</li>
 		</script>

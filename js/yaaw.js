@@ -242,17 +242,6 @@ var YAAW = (function() {
 				$("#torrent-up-input").remove();
 				$("#torrent-up-btn").addClass("disabled").tooltip({title: "当前浏览器不支持 File API."});
 			}
-
-			if (window.applicationCache) {
-				var appcache = window.applicationCache;
-				$(document).ready(function() {
-					if (appcache.status == appcache.IDLE)
-						$("#offline-cached").text("cached");
-				});
-				appcache.addEventListener("cached", function(){
-					$("#offline-cached").text("cached");
-				});
-			}
 		},
 
 		tpl: {
