@@ -155,7 +155,7 @@ var YAAW = (function() {
 				if ($(this).parent().find(".select-box:first").hasClass("glyphicon-ok")) {
 					$(this).parent().find(".select-box").removeClass("glyphicon-ok");
 				} else {
-					$(this).parent().find(".select-box").addClass("glyphicon-ok");
+					$(this).parent().find(".select-box").addClass("glyphicon glyphicon-ok");
 				}
 			});
 
@@ -578,10 +578,10 @@ var YAAW = (function() {
 					$("#select-btn .select-box").removeClass("glyphicon-minus glyphicon-ok");
 				} else if (selected.length < $(".tasks-table .task").length) {
 					selected_tasks = true;
-					$("#select-btn .select-box").removeClass("glyphicon-ok").addClass("glyphicon-minus");
+					$("#select-btn .select-box").removeClass("glyphicon-ok").addClass("glyphicon glyphicon-minus");
 				} else {
 					selected_tasks = true;
-					$("#select-btn .select-box").removeClass("glyphicon-minus").addClass("glyphicon-ok");
+					$("#select-btn .select-box").removeClass("glyphicon-minus").addClass("glyphicon glyphicon-ok");
 				}
 
 				if (selected.length + $(".info-box").length == 0) {
@@ -600,7 +600,7 @@ var YAAW = (function() {
 			},
 
 			select: function(task) {
-				$(task).addClass("selected").find(".select-box").addClass("glyphicon-ok");
+				$(task).addClass("selected").find(".select-box").addClass("glyphicon glyphicon-ok");
 			},
 
 			unSelect: function(task) {
@@ -608,7 +608,7 @@ var YAAW = (function() {
 			},
 
 			toggle: function(task) {
-				$(task).toggleClass("selected").find(".select-box").toggleClass("glyphicon-ok");
+				$(task).toggleClass("selected").find(".select-box").toggleClass("glyphicon glyphicon-ok");
 			},
 
 			unSelectAll: function(notupdate) {
