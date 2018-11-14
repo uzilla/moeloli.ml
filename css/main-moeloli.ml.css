@@ -59,8 +59,8 @@ html, body {
     background-color: #fff;
 }
 
-.btn-default:active {
-    background-color: #f0f0f0;
+.btn-default:hover, .btn-default:active, .btn-default.active {
+    background-color: #f8f8f8;
 }
 
 /* dashboard */
