@@ -152,16 +152,16 @@ var YAAW = (function() {
 			});
 
 			$("#ib-files .ib-file-title, #ib-files .select-box").live("click", function() {
-				if ($(this).parent().find(".select-box:first").hasClass("glyphicon-ok")) {
-					$(this).parent().find(".select-box").removeClass("glyphicon-ok");
+				if ($(this).parent().find(".select-box:first").hasClass("icon-ok")) {
+					$(this).parent().find(".select-box").removeClass("icon-ok");
 				} else {
-					$(this).parent().find(".select-box").addClass("glyphicon glyphicon-ok");
+					$(this).parent().find(".select-box").addClass("icon-ok");
 				}
 			});
 
 			$("#ib-file-save").live("click", function() {
 				var indexes = [];
-				$("#ib-files .select-box.glyphicon-ok[data-index]").each(function(i, n) {
+				$("#ib-files .select-box.icon-ok[data-index]").each(function(i, n) {
 					indexes.push(n.getAttribute("data-index"));
 				});
 				if (indexes.length == 0) {
@@ -280,7 +280,7 @@ var YAAW = (function() {
 						}
 
 						content += '<li>';
-						content += '<i class="select-box glyphicon-ok"></i>';
+						content += '<i class="select-box icon-ok"></i>';
 						content += '<span class="ib-file-title">'+$('<div>').text(k).html()+'</span>';
 						content += render(f[k]);
 						content += '</li>';
@@ -575,13 +575,13 @@ var YAAW = (function() {
 				var selected = $(".tasks-table .task.selected");
 				if (selected.length == 0) {
 					selected_tasks = false;
-					$("#select-btn .select-box").removeClass("glyphicon-minus glyphicon-ok");
+					$("#select-btn .select-box").removeClass("icon-minus icon-ok");
 				} else if (selected.length < $(".tasks-table .task").length) {
 					selected_tasks = true;
-					$("#select-btn .select-box").removeClass("glyphicon-ok").addClass("glyphicon glyphicon-minus");
+					$("#select-btn .select-box").removeClass("icon-ok").addClass("icon-minus");
 				} else {
 					selected_tasks = true;
-					$("#select-btn .select-box").removeClass("glyphicon-minus").addClass("glyphicon glyphicon-ok");
+					$("#select-btn .select-box").removeClass("icon-minus").addClass("icon-ok");
 				}
 
 				if (selected.length + $(".info-box").length == 0) {
@@ -600,15 +600,15 @@ var YAAW = (function() {
 			},
 
 			select: function(task) {
-				$(task).addClass("selected").find(".select-box").addClass("glyphicon glyphicon-ok");
+				$(task).addClass("selected").find(".select-box").addClass("icon-ok");
 			},
 
 			unSelect: function(task) {
-				$(task).removeClass("selected").find(".select-box").removeClass("glyphicon-ok");
+				$(task).removeClass("selected").find(".select-box").removeClass("icon-ok");
 			},
 
 			toggle: function(task) {
-				$(task).toggleClass("selected").find(".select-box").toggleClass("glyphicon glyphicon-ok");
+				$(task).toggleClass("selected").find(".select-box").toggleClass("icon-ok");
 			},
 
 			unSelectAll: function(notupdate) {
