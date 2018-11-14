@@ -59,6 +59,10 @@ html, body {
     background-color: #fff;
 }
 
+.btn-default:active {
+    background-color: #f0f0f0;
+}
+
 /* dashboard */
 #head-container {
     height: auto;
@@ -127,6 +131,11 @@ html, body {
 #other-tasks {
     min-height: 40%;
     margin-top: 4%;
+}
+
+#uri-input {
+    height: 16px;
+    margin-right: 5px;
 }
 
 #setting-modal {
