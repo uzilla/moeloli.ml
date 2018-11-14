@@ -499,7 +499,7 @@ var YAAW = (function() {
 						removed: "glyphicon-trash",
 					};
 					return function(text) {
-						return status_icon_map[text] || "";
+						return "glyphicon " + status_icon_map[text] || "";
 					};
 				},
 
