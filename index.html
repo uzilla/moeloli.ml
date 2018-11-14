@@ -62,7 +62,7 @@
 
 				<div class="pull-left">
 					<div class="btn-group" id="select-btn">
-						<button id="select-all-btn" class="btn" title="全选">
+						<button id="select-all-btn" class="btn btn-default" title="全选">
 							<i class="select-box"></i>
 						</button>
 						<a class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:;">
@@ -79,18 +79,18 @@
 
 				<div class="pull-left" id="not-selected-grp">
 					<div class="pull-left btn-group">
-						<a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal" title="添加任务">
+						<a class="btn btn-default" id="add-task-btn" data-toggle="modal" href="#add-task-modal" title="添加任务">
 							<i class="glyphicon glyphicon-plus"></i> 添加
 						</a>
 					</div>
 					<div class="pull-left btn-group" id="do-all-btn">
-						<a href="javascript:;" id="btnStartAll" class="btn" id="unpause-all" title="开始所有任务">
+						<a href="javascript:;" id="btnStartAll" class="btn btn-default" id="unpause-all" title="开始所有任务">
 							<i class="glyphicon glyphicon-forward"></i>
 						</a>
-						<a href="javascript:;" id="btnPauseAll" class="btn" id="pause-all" title="暂停所有任务">
+						<a href="javascript:;" id="btnPauseAll" class="btn btn-default" id="pause-all" title="暂停所有任务">
 							<i class="glyphicon glyphicon-stop"></i>
 						</a>
-						<a href="javascript:;" id="btnRemoveFinished" class="btn" id="pure-all" title="删除已经完成或出错的任务">
+						<a href="javascript:;" id="btnRemoveFinished" class="btn btn-default" id="pure-all" title="删除已经完成或出错的任务">
 							<i class="glyphicon glyphicon-trash"></i>
 						</a>
 					</div>
@@ -98,13 +98,13 @@
 
 				<div class="pull-left hide" id="selected-grp">
 					<div class="btn-group">
-						<a href="javascript:;" id="btnUnPause" class="btn" title="开始">
+						<a href="javascript:;" id="btnUnPause" class="btn btn-default" title="开始">
 							<i class="glyphicon glyphicon-play"></i>
 						</a>
-						<a href="javascript:;" id="btnPause" class="btn" title="暂停">
+						<a href="javascript:;" id="btnPause" class="btn btn-default" title="暂停">
 							<i class="glyphicon glyphicon-pause"></i>
 						</a>
-						<a href="javascript:;" id="btnRemove" class="btn" title="删除">
+						<a href="javascript:;" id="btnRemove" class="btn btn-default" title="删除">
 							<i class="glyphicon glyphicon-remove"></i>
 						</a>
 					</div>
@@ -115,10 +115,10 @@
 
 				<div class="pull-right" id="other-grp">
 					<div class="btn-group">
-						<a href="javascript:;" class="btn" id="refresh-btn" title="刷新">
+						<a href="javascript:;" class="btn btn-default" id="refresh-btn" title="刷新">
 							<i class="glyphicon glyphicon-refresh"></i> 刷新
 						</a>
-						<a class="btn" id="setting-btn" data-toggle="modal" href="#setting-modal" title="设置">
+						<a class="btn btn-default" id="setting-btn" data-toggle="modal" href="#setting-modal" title="设置">
 							<i class="glyphicon glyphicon-wrench"></i>
 						</a>
 					</div>
@@ -180,7 +180,7 @@
 			<form id="add-task-uri">
 				<div class="input-append">
 					<input type="text" name="uri" id="uri-input" class="input-clear" placeholder="输入HTTP, FTP 或 Magnet 链接" />
-					<span><a id="torrent-up-btn" class="btn">上传种子<input type="file" accept=".torrent" id="torrent-up-input" /></a></span>
+					<span><a id="torrent-up-btn" class="btn btn-default">上传种子<input type="file" accept=".torrent" id="torrent-up-input" /></a></span>
 				</div>
 				<textarea id="uri-textarea" rows=5 class="input-clear hide" placeholder="输入HTTP, FTP 或 Magnet 链接, 每行一个"></textarea>
 			</form>
@@ -189,7 +189,7 @@
 		</div>
 		<div class="modal-footer">
 			<a href="javascript:;" id="add-task-submit" class="btn btn-primary">添加</a>
-			<a href="javascript:;" id="add-task-clear" class="btn" data-dismiss="modal">取消</a>
+			<a href="javascript:;" id="add-task-clear" class="btn btn-default" data-dismiss="modal">取消</a>
 		</div>
 		</section>
 
@@ -252,7 +252,7 @@
 				&nbsp;/&nbsp; 修改 <a href="https://github.com/urain39/yaaw-zh-hans" target="_blank">urain39</a>
 			</div>
 			<a href="javascript:;" id="saveSettings" class="btn btn-success">保存</a>
-			<a href="javascript:;" class="btn" data-dismiss="modal">取消</a>
+			<a href="javascript:;" class="btn btn-default" data-dismiss="modal">取消</a>
 		</div>
 		</section>
 

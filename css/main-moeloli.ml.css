@@ -43,7 +43,6 @@ html, body {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  background-color: #fff;
   border: 1px solid transparent;
   padding: 2px 12px;
   font-size: 14px;
@@ -54,6 +53,10 @@ html, body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.btn-default {
+    background-color: #fff;
 }
 
 /* dashboard */
