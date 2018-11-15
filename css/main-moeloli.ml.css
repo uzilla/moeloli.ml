@@ -65,6 +65,17 @@ html, body {
     background-position: 1px 0; /* XXX: fix the icon position */
 }
 
+#version-info {
+    font-size: 10px;
+    padding: 0 0 5px 0;
+}
+
+@media (max-width: 550px) {
+    #version-info {
+        text-align: right;
+    }
+}
+
 /* dashboard */
 #head-container {
     height: auto;
