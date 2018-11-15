@@ -32,10 +32,42 @@ html, body {
     height: 100%;
 }
 
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 2px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-default {
+    background-color: #fff;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default.active {
+    background-color: #f8f8f8;
+}
+
 /* dashboard */
 #head-container {
     height: auto;
-    padding: 0 15px 15px 15px;
+    padding: 0 20px 15px 20px;
+    box-shadow: 2px 3px 5px rgba(10, 10, 10, 0.2) inset;
 }
 
 /* main container */
@@ -100,6 +132,11 @@ html, body {
 #other-tasks {
     min-height: 40%;
     margin-top: 4%;
+}
+
+#uri-input {
+    height: 16px;
+    margin-right: 5px;
 }
 
 #setting-modal {
