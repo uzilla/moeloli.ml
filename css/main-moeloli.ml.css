@@ -92,7 +92,7 @@ html, body {
 }
 
 /* fix for PC */
-@media (min-width: 550px) and (min-height: 640px) {
+@media (min-width: 551px) and (min-height: 641px) {
    #main-container {
        height: 75%;
    }
@@ -146,16 +146,36 @@ html, body {
     margin-top: 4%;
 }
 
-@media (max-height: 639px) {
-    .modal {
+/* hide scrollbar */
+.modal::-webkit-scrollbar,
+.modal-body::-webkit-scrollbar {
+    width: 0;
+}
+
+/* fix modal height */
+@media (max-height: 640px) {
+    #add-task-modal, #setting-modal {
+        top: 3%;
+        bottom: 3%;
+        height: 94%;
+        margin-top: 0;
+    }
+
+    .modal-header {
+        height: 28px;
+    }
+
+    .modal-footer {
+        height: auto;
+    }
+
+    .modal-body {
         height: 80%;
         overflow-y: auto;
     }
-    .modal::-webkit-scrollbar {
-        width: 0; /* hide scrollbar */
-    }
 }
 
+/* fix for add-task-modal */
 #uri-input {
     height: 16px;
     margin-right: 5px;
