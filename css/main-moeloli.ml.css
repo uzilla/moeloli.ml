@@ -163,9 +163,14 @@ html, body {
     }
 
     /* fix transtion */
-    .fade {
-        opacity: 0.98;
-        filter:alpha(opacity=98);
+    .modal.fade input, .modal.fade div, .modal.fade .modal-body {
+        opacity: 0;
+        filter:alpha(opacity=0);
+    }
+
+    .modal.fade.in input, .modal.fade.in div, .modal.fade .modal-body {
+        opacity: 1;
+        filter:alpha(opacity=1);
     }
 
     .modal-header {
