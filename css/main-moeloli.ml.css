@@ -160,6 +160,8 @@ html, body {
         bottom: 3%;
         height: 94%;
         margin-top: 0;
+        overflow-x: hidden;
+        position: absolute;
     }
 
     /* fix transtion */
@@ -172,18 +174,25 @@ html, body {
         opacity: 1;
         filter:alpha(opacity=1);
     }
+    
+    .modal-header, .modal-body, .modal-footer {
+        margin: 0;
+        padding: 10px;
+        position: relative;
+    }
 
     .modal-header {
-        height: 28px;
+        height: 24px;
     }
 
     .modal-body {
-        height: 80%;
+        height: 78%;
         overflow-y: auto;
+        position: relative;
     }
 
     .modal-footer {
-        height: auto;
+        height: 28px;
     }
 }
 
