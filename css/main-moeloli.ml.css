@@ -147,6 +147,17 @@ html, body {
     margin-top: 4%;
 }
 
+/* fix for add-task-modal */
+#uri-input {
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* fix for Firefox */
+.task {
+    overflow: hidden;
+}
+
 /* hide scrollbar */
 .modal::-webkit-scrollbar,
 .modal-body::-webkit-scrollbar {
@@ -184,6 +195,9 @@ html, body {
     .modal-header {
         height: 22px;
     }
+    #add-task-modal .modal-header {
+        margin-top: -4px;
+    }
     #setting-modal .modal-header {
         margin-top: -5px;
     }
@@ -197,12 +211,6 @@ html, body {
     .modal-footer {
         height: 24px;
     }
-}
-
-/* fix for add-task-modal */
-#uri-input {
-    height: 16px;
-    margin-right: 5px;
 }
 
 /*
