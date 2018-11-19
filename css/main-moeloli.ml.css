@@ -182,7 +182,10 @@ html, body {
     }
 
     .modal-header {
-        height: 24px;
+        height: 22px;
+    }
+    #setting-modal .modal-header {
+        margin-top: -5px;
     }
 
     .modal-body {
@@ -192,7 +195,7 @@ html, body {
     }
 
     .modal-footer {
-        height: 28px;
+        height: 24px;
     }
 }
 
