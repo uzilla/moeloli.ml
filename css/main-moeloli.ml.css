@@ -158,6 +158,11 @@ html, body {
     overflow: hidden;
 }
 
+/* F**K THE SHADOW! */
+.radio input[type="radio"] {
+    box-shadow: none;
+}
+
 /* hide scrollbar */
 .modal::-webkit-scrollbar,
 .modal-body::-webkit-scrollbar {
@@ -173,6 +178,7 @@ html, body {
         margin-top: 0;
         overflow-x: hidden;
         position: absolute;
+        transition: 0.1s;
     }
 
     /* fix transtion */
