@@ -83,6 +83,13 @@ html, body {
     #edition-version {
         text-align: right;
     }
+
+    /* fix for Firefox */
+    .task .task-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }
 
 /* dashboard */
@@ -162,11 +169,6 @@ html, body {
 #uri-input {
     height: 16px;
     margin-right: 5px;
-}
-
-/* fix for Firefox */
-.task {
-    overflow: hidden;
 }
 
 /* F**K THE SHADOW! */
