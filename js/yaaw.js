@@ -215,6 +215,21 @@ var YAAW = (function() {
 				ARIA2.get_global_option();
 			});
 
+			$("#show-authors").live("click", function() {
+				if ($("#copyright").hasClass("hide")) {
+					$("#copyright").removeClass("hide");
+					$("body").css("overflow-x", "hidden");
+					$("body").css("overflow-y", "scroll");
+					$("#main-footer").css("overflow-y", "visible");
+				} else {
+					$("#copyright").addClass("hide");
+					if ($(window).height() > 500) {
+						$("body").css("overflow-y", "hidden");
+						$("#main-footer").css("overflow-y", "hidden");
+					}
+				}
+			});
+
 			if (window.FileReader) {
 				var holder = $("#add-task-modal .modal-body").get(0);
 				holder.ondragover = function() {

@@ -49,7 +49,7 @@
 				<!--<span id="offline-cached"></span>-->
 				<div id="global-info" class="pull-right">
 					<div id="edition-version">
-						<a href="https://github.com/urain39/yaaw-zh-hans" target="_blank">MoeEdition Beta*</a>
+						<a id="show-authors" href="#copyright">MoeEdition Beta*</a>
 					</div>
 					<div id="global-version"></div>
 					<div id="global-speed"></div>
@@ -249,21 +249,41 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<!--<div id="copyright">
-				作者 <a href="https://github.com/binux/yaaw" target="_blank">Binux</a>
-				&nbsp;/&nbsp; 汉化 <a href="https://github.com/aa65535/yaaw-zh-hans" target="_blank">aa65535</a>
-				&nbsp;/&nbsp; 修改 <a href="https://github.com/urain39/yaaw-zh-hans" target="_blank">urain39</a>
-			</div>-->
 			<a href="javascript:;" id="saveSettings" class="btn btn-success">保存</a>
 			<a href="javascript:;" class="btn btn-default" data-dismiss="modal">取消</a>
 		</div>
 		</section>
 
-		<footer id="main-footer">
+		<footer id="main-footer" class="container">
 			<section>
-				&copy; 2018 MoeLoli.ML &amp; <a href="https://github.com/urain39/yaaw-zh-hans/graphs/contributors" target="_blank">YAAW Authors</a> | Hosted on Coding.Net
+				&copy; 2018 MoeLoli.ML Some Rights Reserved.
 			</section>
+			<div id="copyright" class="hide">
+				<section>
+					作者 <a href="https://github.com/binux/yaaw" target="_blank">Binux</a>
+					&nbsp;/&nbsp; 汉化 <a href="https://github.com/aa65535/yaaw-zh-hans" target="_blank">aa65535</a>
+					&nbsp;/&nbsp; 修改 <a href="https://github.com/urain39/yaaw-zh-hans" target="_blank">urain39</a>
+				</section>
+			</div>
 		</footer>
+
+		<script id="auto-adjust-height">
+			function auto_adjust_height() {
+				var body_height = $(window).height();
+				var remain_height = body_height - $("#head-container").outerHeight(true) - $("#main-container").outerHeight(true) - $("#main-footer").outerHeight(true);
+
+				if (remain_height > 0) {
+					$("#main-container").height($("#main-container").height() + remain_height);
+				}
+
+				if (body_height < 500) {
+					$("body").css("overflow", "scroll");
+				}
+			}
+
+			window.onload = auto_adjust_height;
+			window.onresize = auto_adjust_height;
+		</script>
 
 		<script id="global-speed-tpl" type="text/mustache-template">
 			<i class="glyphicon glyphicon-download"></i> <span>{{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}</span>/s
