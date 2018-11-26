@@ -33,26 +33,12 @@ html, body {
     overflow: hidden;
 }
 
-.btn {
-    background-image: none;
-    padding: 2px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border: 1px solid #6c6c6c \9;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 .btn-default {
-    background-color: #fff;
+    background-color: #f8f8f8;
 }
 
 .btn-default:hover, .btn-default:active, .btn-default.active {
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
 }
 
 /* override the icons. */
@@ -172,8 +158,7 @@ html, body {
 
 /* fix for add-task-modal */
 #uri-input {
-    height: 16px;
-    margin-right: 5px;
+    margin-right: 25px;
 }
 
 /* F**K THE SHADOW! */
