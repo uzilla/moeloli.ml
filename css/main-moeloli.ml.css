@@ -97,7 +97,7 @@ html, body {
 /* main container */
 #main-container {
     height: 62%;
-    overflow-y: auto;
+    overflow-y: scroll;
     padding: 0 40px 0 40px;
     border-top: 1px solid #AAA;
     border-right: 1px solid #6c6c6c \9;
