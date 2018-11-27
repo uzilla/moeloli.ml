@@ -30,7 +30,9 @@
 html, body {
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    /* fix for Firefox */
+    overflow-x: hidden !important;
+    overflow-y: hidden;
 }
 
 .btn-default {
