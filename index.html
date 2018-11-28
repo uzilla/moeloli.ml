@@ -287,8 +287,8 @@
 
 			window.onload = adjust_height;
 			window.onresize = function() {
-				if (this._window_loaded) {
-					location.reload(); // NOTE: Do not delete this.
+				if (this._window_loaded && $("#setting-modal").is(":hidden") && $("#add-task-modal").is(":hidden")) {
+					window.location.reload();
 				}
 			};
 		</script>
