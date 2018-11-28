@@ -268,9 +268,10 @@
 		</footer>
 
 		<script id="auto-adjust-height">
+			that = this;
 			function adjust_height() {
-				if (!this._window_loaded) {
-					this._window_loaded = true;
+				if (!that._window_loaded) {
+					that._window_loaded = true;
 				}
 
 				var body_height = $(window).height();
@@ -287,7 +288,7 @@
 
 			window.onload = adjust_height;
 			window.onresize = function() {
-				if (this._window_loaded && $("#setting-modal").is(":hidden") && $("#add-task-modal").is(":hidden")) {
+				if (that._window_loaded && $("#setting-modal").is(":hidden") && $("#add-task-modal").is(":hidden")) {
 					window.location.reload();
 				}
 			};
