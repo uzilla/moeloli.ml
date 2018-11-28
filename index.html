@@ -268,12 +268,7 @@
 		</footer>
 
 		<script id="auto-adjust-height">
-			that = this;
 			function adjust_height() {
-				if (!that._window_loaded) {
-					that._window_loaded = true;
-				}
-
 				var body_height = $(window).height();
 				var remain_height = body_height - $("#head-container").outerHeight(true) - $("#main-container").outerHeight(true) - $("#main-footer").outerHeight(true);
 
@@ -287,11 +282,6 @@
 			}
 
 			window.onload = adjust_height;
-			window.onresize = function() {
-				if (that._window_loaded && $("#setting-modal").is(":hidden") && $("#add-task-modal").is(":hidden")) {
-					window.location.reload();
-				}
-			};
 		</script>
 
 		<script id="global-speed-tpl" type="text/mustache-template">
