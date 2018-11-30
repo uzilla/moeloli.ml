@@ -269,10 +269,6 @@
 
 		<script id="auto-adjust-height">
 			function adjust_height() {
-				if (!this._window_loaded) {
-					this._window_loaded = true;
-				}
-
 				var body_height = $(window).height();
 				var remain_height = body_height - $("#head-container").outerHeight(true) - $("#main-container").outerHeight(true) - $("#main-footer").outerHeight(true);
 
@@ -286,11 +282,6 @@
 			}
 
 			window.onload = adjust_height;
-			window.onresize = function() {
-				if (this._window_loaded) {
-					location.reload(); // NOTE: Do not delete this.
-				}
-			};
 		</script>
 
 		<script id="global-speed-tpl" type="text/mustache-template">
