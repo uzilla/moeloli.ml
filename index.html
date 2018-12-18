@@ -266,24 +266,6 @@
 				</section>
 			</div>
 		</footer>
-
-		<script id="auto-adjust-height">
-			function adjust_height() {
-				var body_height = $(window).height();
-				var remain_height = body_height - $("#head-container").outerHeight(true) - $("#main-container").outerHeight(true) - $("#main-footer").outerHeight(true);
-
-				if (remain_height > 0) {
-					$("#main-container").height($("#main-container").height() + remain_height);
-				}
-
-				if (body_height < 480) {
-					$("body").css("overflow-y", "scroll");
-				}
-			}
-
-			window.onload = adjust_height;
-		</script>
-
 		<script id="global-speed-tpl" type="text/mustache-template">
 			<i class="glyphicon glyphicon-download"></i> <span>{{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}</span>/s
 				/
@@ -559,6 +541,7 @@
 		<script src="js/peerid.min.js"></script>
 		<script src="js/aria2.js"></script>
 		<script src="js/yaaw.js"></script>
+		<script src="js/yaaw-moeloli.ml.js"></script>
 	</body>
 </html>
 <!-- vim: set et sw=2 ts=2 sts=2 ff=unix fenc=utf8: -->
