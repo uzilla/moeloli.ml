@@ -3,23 +3,23 @@
  */
 
 ;(function() {
-    function adjust_height() {
-        var body_h = $(window).height();
-        var remain_h = body_h - $('#head-container').outerHeight(true) - $('#main-container').outerHeight(true) - $('#main-footer').outerHeight(true);
+    function autoAdjustHeight() {
+        var bodyHeight = $(window).height();
+        var remainHeight = bodyHeight - $('#head-container').outerHeight(true) - $('#main-container').outerHeight(true) - $('#main-footer').outerHeight(true);
 
-        if (remain_h > 0) {
-            $('#main-container').height($('#main-container').height() + remain_h);
+        if (remainHeight > 0) {
+            $('#main-container').height($('#main-container').height() + remainHeight);
+        }
 
-            if (body_h < 480) {
-                $('body').css('overflow-y', 'scroll');
-            }
+        if (bodyHeight < 500) {
+            $('body').css('overflow-y', 'scroll');
         }
     }
 
     var _onload = window.onload;
-    
+
     window.onload = function() {
-        adjust_height.apply(this);
+        autoAdjustHeight.apply(this);
         if (typeof _onload === 'function') {
             _onload.apply(this);
         }
