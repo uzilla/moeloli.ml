@@ -35,12 +35,18 @@ html, body {
     overflow-y: hidden;
 }
 
+.btn {
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
 .btn-default {
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
 
 .btn-default:hover, .btn-default:active, .btn-default.active {
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
 }
 
 /* override the icons. */
