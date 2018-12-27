@@ -33,7 +33,7 @@
             $('#main-footer').css('overflow-y', 'visible');
         } else {
             $('#copyright').addClass('hide');
-            if ($(window).height() > 480) {
+            if ($(window).height() > 500) {
                 $('body').css('overflow-y', 'hidden');
                 $('#main-footer').css('overflow-y', 'hidden');
             }
