@@ -61,7 +61,7 @@ html, body {
 .icon-minus {
     background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg>');
     background-position: 1px 0; /* XXX: fix the icon position */
-    /* fallback for IE9 or less */
+    /* fallback for IE9 or older */
     background-image: url("../img/glyphicons-halflings.png") \9;
     background-position: -433px -96px \9;
 }
@@ -239,6 +239,19 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     .modal-body {
         height: 62%;
     }
+}
+
+#night-mode {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 9999;
+    position: absolute;
+    pointer-events: none;
+    display: none !important \9; /* pointer-events doesn't works on IE9 or older */
 }
 
 /*
