@@ -1,0 +1,33 @@
+CACHE MANIFEST
+# 2018-12-30 08:24
+
+CACHE:
+index.html
+favicon.ico
+js/aria2.js
+js/bootstrap.min.js
+js/yaaw.js
+js/jquery-1.7.2.min.js
+js/jquery.Storage.min.js
+js/jquery.base64.min.js
+js/jquery.jsonrpc.js
+js/jquery.jsonrpc.min.js
+js/mustache.min.js
+js/peerid.js
+js/peerid.min.js
+js/html5shiv.min.js
+js/yaaw-moeloli.ml.js
+css/COPYING
+css/bootstrap-responsive.min.css
+css/bootstrap.min.css
+css/glyphicons.less
+css/glyphicons.min.css
+css/main-moeloli.ml.css
+css/main.css
+img/glyphicons-halflings-white.png
+img/glyphicons-halflings.png
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
+fonts/glyphicons-halflings-regular.woff2

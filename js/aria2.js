@@ -721,7 +721,7 @@ if (typeof ARIA2 == "undefined" || !ARIA2) var ARIA2 = (function() {
 					if (result.uploadSpeed > 0) {
 						title += "↑" + YAAW.tpl.view.format_size_0()(result.uploadSpeed) + "/s ";
 					}
-					title += (title ? "- " : "") + "Aria2 Web 控制台";
+					title += (title ? "- " : "") + "Aria2 Web控制台";
 					document.title = title;
 				}
 			);
