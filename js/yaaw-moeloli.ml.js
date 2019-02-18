@@ -16,19 +16,19 @@
         }
     }
 
-    var _onload = window.onload;
+    var onload = window.onload;
 
     window.onload = function() {
         autoAdjustHeight.apply(this);
-        if (typeof _onload === 'function') {
-            _onload.apply(this);
+        if (typeof onload === 'function') {
+            onload.apply(this);
         }
 
         var curHours = new Date().getHours();
         if (curHours <= 6 || curHours >= 18) {
             $("#night-mode").removeClass("hide");
         }
-    }
+    };
 
     $('#show-authors').on('click', function() {
         if ($('#copyright').hasClass('hide')) {
