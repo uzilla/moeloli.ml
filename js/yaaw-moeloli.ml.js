@@ -33,7 +33,7 @@
     $('#show-authors').on('click', function() {
         if ($('#copyright').hasClass('hide')) {
             $('#copyright').removeClass('hide');
-            $('body').css('overflow-x', 'hidden');
+            $('body').css('overflow-x', 'hidden')
                      .css('overflow-y', 'scroll');
             $('#main-footer').css('overflow-y', 'visible');
         } else {
