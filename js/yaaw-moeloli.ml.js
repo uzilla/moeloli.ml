@@ -16,16 +16,16 @@
         }
     }
 
-    var onload = window.onload;
+    var _onload = window.onload;
 
     window.onload = function() {
         autoAdjustHeight.apply(this);
-        if (typeof onload === 'function') {
-            onload.apply(this);
+        if (typeof _onload === 'function') {
+            _onload.apply(this);
         }
 
-        var curHours = new Date().getHours();
-        if (curHours <= 6 || curHours >= 18) {
+        var currHours = new Date().getHours();
+        if (currHours <= 6 || currHours >= 18) {
             $("#night-mode").removeClass("hide");
         }
     };
@@ -34,7 +34,7 @@
         if ($('#copyright').hasClass('hide')) {
             $('#copyright').removeClass('hide');
             $('body').css('overflow-x', 'hidden');
-            $('body').css('overflow-y', 'scroll');
+                     .css('overflow-y', 'scroll');
             $('#main-footer').css('overflow-y', 'visible');
         } else {
             $('#copyright').addClass('hide');
